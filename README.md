@@ -19,7 +19,7 @@ Fork a copy from github or download the repository on your computer, unzip it an
 2. Run `npm start` to start your server.
 3. Open another tab at your terminal.
 4. Run `npm run compile` to compile with webpack.
-5. Run `localhost:3000` on your browser to begin using our app.
+5. Run `localhost:3008` on your browser to begin using our app.
 
 ---
 

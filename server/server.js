@@ -1,19 +1,31 @@
-import express from "express";
+import express from 'express';
+import path from "path";
+import constants from './config/constants';
+import middlewaresConfig from './config/middlewares';
+import apiRoutes from './router';
 
 // Initial exprss server
 const app = express();
-app.set('port', (process.env.PORT || 3008))
+
+// Middleware
+middlewaresConfig(app);
 
 console.log('=======================================================');
-// console.log(constants);
+console.log(constants);
 console.log('=======================================================');
 
 // Router
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+apiRoutes(app);
 
-app.listen(app.get('port'), function(){
-  console.log(`Listening on port ${app.get('port')}`)
+app.listen(constants.PORT, err => {
+  if (err) {
+    throw err;
+  } else {
+    console.log(`
+        Listening on port ${constants.PORT}
+        ---
+        Running on ${process.env.NODE_ENV}
+        ---
+    `);
+  }
 })
-
