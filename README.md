@@ -1,9 +1,18 @@
+
 ## CryptoHub V1.0
+=======================
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+![License](https://img.shields.io/npm/l/express.svg)
 
 ### CryptoHub - Real Live Crypto Currency Monitor
 
 A platform allow user monitor most popular crypto currency on the market.
 <br>
+
+---
+
+#### Contents
+1. [To run the application](#To run the application)
 
 
 ---
